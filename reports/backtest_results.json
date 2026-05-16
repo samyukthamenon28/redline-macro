@@ -1,0 +1,404 @@
+{
+  "meta": {
+    "n_folds": 13,
+    "train_years": 10,
+    "test_years": 1,
+    "lookback": 12,
+    "xgb_weight": 0.5,
+    "optuna_trials": 50,
+    "device": "cpu"
+  },
+  "global_metrics": {
+    "logreg": {
+      "model": "logreg",
+      "auc_roc": 0.904,
+      "auc_pr": 0.0762,
+      "f1": 0.1569,
+      "f1_thresh": 0.88,
+      "brier": 0.0986,
+      "ece": 0.1506
+    },
+    "xgboost": {
+      "model": "xgboost",
+      "auc_roc": 0.6143,
+      "auc_pr": 0.0702,
+      "f1": 0.25,
+      "f1_thresh": 0.34,
+      "brier": 0.0117,
+      "ece": 0.0128
+    },
+    "lstm": {
+      "model": "lstm",
+      "auc_roc": 0.4113,
+      "auc_pr": 0.0103,
+      "f1": 0.0,
+      "f1_thresh": 0.5,
+      "brier": 0.0104,
+      "ece": 0.005
+    },
+    "ensemble": {
+      "model": "ensemble",
+      "auc_roc": 0.5517,
+      "auc_pr": 0.0702,
+      "f1": 0.25,
+      "f1_thresh": 0.17,
+      "brier": 0.0101,
+      "ece": 0.0066
+    }
+  },
+  "per_fold_metrics": [
+    {
+      "fold": 0,
+      "logreg": {
+        "model": "logreg",
+        "note": "insufficient positives"
+      },
+      "xgboost": {
+        "model": "xgboost",
+        "note": "insufficient positives"
+      },
+      "lstm": {
+        "model": "lstm",
+        "note": "insufficient positives"
+      },
+      "ensemble": {
+        "model": "ensemble",
+        "note": "insufficient positives"
+      }
+    },
+    {
+      "fold": 1,
+      "logreg": {
+        "model": "logreg",
+        "note": "insufficient positives"
+      },
+      "xgboost": {
+        "model": "xgboost",
+        "note": "insufficient positives"
+      },
+      "lstm": {
+        "model": "lstm",
+        "note": "insufficient positives"
+      },
+      "ensemble": {
+        "model": "ensemble",
+        "note": "insufficient positives"
+      }
+    },
+    {
+      "fold": 2,
+      "logreg": {
+        "model": "logreg",
+        "note": "insufficient positives"
+      },
+      "xgboost": {
+        "model": "xgboost",
+        "note": "insufficient positives"
+      },
+      "lstm": {
+        "model": "lstm",
+        "note": "insufficient positives"
+      },
+      "ensemble": {
+        "model": "ensemble",
+        "note": "insufficient positives"
+      }
+    },
+    {
+      "fold": 3,
+      "logreg": {
+        "model": "logreg",
+        "note": "insufficient positives"
+      },
+      "xgboost": {
+        "model": "xgboost",
+        "note": "insufficient positives"
+      },
+      "lstm": {
+        "model": "lstm",
+        "note": "insufficient positives"
+      },
+      "ensemble": {
+        "model": "ensemble",
+        "note": "insufficient positives"
+      }
+    },
+    {
+      "fold": 4,
+      "logreg": {
+        "model": "logreg",
+        "note": "insufficient positives"
+      },
+      "xgboost": {
+        "model": "xgboost",
+        "note": "insufficient positives"
+      },
+      "lstm": {
+        "model": "lstm",
+        "note": "insufficient positives"
+      },
+      "ensemble": {
+        "model": "ensemble",
+        "note": "insufficient positives"
+      }
+    },
+    {
+      "fold": 5,
+      "logreg": {
+        "model": "logreg",
+        "auc_roc": 0.9828,
+        "auc_pr": 0.5833,
+        "f1": 0.8,
+        "f1_thresh": 0.21,
+        "brier": 0.0247,
+        "ece": 0.0589
+      },
+      "xgboost": {
+        "model": "xgboost",
+        "auc_roc": 0.4655,
+        "auc_pr": 0.0333,
+        "f1": 0.0,
+        "f1_thresh": 0.5,
+        "brier": 0.0339,
+        "ece": 0.0306
+      },
+      "lstm": {
+        "model": "lstm",
+        "auc_roc": 0.5,
+        "auc_pr": 0.0333,
+        "f1": 0.0,
+        "f1_thresh": 0.5,
+        "brier": 0.0333,
+        "ece": 0.0333
+      },
+      "ensemble": {
+        "model": "ensemble",
+        "auc_roc": 0.4655,
+        "auc_pr": 0.0333,
+        "f1": 0.0,
+        "f1_thresh": 0.5,
+        "brier": 0.0335,
+        "ece": 0.0302
+      }
+    },
+    {
+      "fold": 6,
+      "logreg": {
+        "model": "logreg",
+        "auc_roc": 0.8793,
+        "auc_pr": 0.1742,
+        "f1": 0.3077,
+        "f1_thresh": 0.39,
+        "brier": 0.0987,
+        "ece": 0.1229
+      },
+      "xgboost": {
+        "model": "xgboost",
+        "auc_roc": 0.9483,
+        "auc_pr": 0.3333,
+        "f1": 0.5,
+        "f1_thresh": 0.34,
+        "brier": 0.0352,
+        "ece": 0.0439
+      },
+      "lstm": {
+        "model": "lstm",
+        "auc_roc": 0.4914,
+        "auc_pr": 0.0333,
+        "f1": 0.0,
+        "f1_thresh": 0.5,
+        "brier": 0.0333,
+        "ece": 0.0329
+      },
+      "ensemble": {
+        "model": "ensemble",
+        "auc_roc": 0.9483,
+        "auc_pr": 0.3333,
+        "f1": 0.5,
+        "f1_thresh": 0.17,
+        "brier": 0.026,
+        "ece": 0.03
+      }
+    },
+    {
+      "fold": 7,
+      "logreg": {
+        "model": "logreg",
+        "note": "insufficient positives"
+      },
+      "xgboost": {
+        "model": "xgboost",
+        "note": "insufficient positives"
+      },
+      "lstm": {
+        "model": "lstm",
+        "note": "insufficient positives"
+      },
+      "ensemble": {
+        "model": "ensemble",
+        "note": "insufficient positives"
+      }
+    },
+    {
+      "fold": 8,
+      "logreg": {
+        "model": "logreg",
+        "note": "insufficient positives"
+      },
+      "xgboost": {
+        "model": "xgboost",
+        "note": "insufficient positives"
+      },
+      "lstm": {
+        "model": "lstm",
+        "note": "insufficient positives"
+      },
+      "ensemble": {
+        "model": "ensemble",
+        "note": "insufficient positives"
+      }
+    },
+    {
+      "fold": 9,
+      "logreg": {
+        "model": "logreg",
+        "auc_roc": 0.9866,
+        "auc_pr": 0.8929,
+        "f1": 0.7273,
+        "f1_thresh": 0.88,
+        "brier": 0.1156,
+        "ece": 0.1806
+      },
+      "xgboost": {
+        "model": "xgboost",
+        "auc_roc": 0.5,
+        "auc_pr": 0.0667,
+        "f1": 0.0,
+        "f1_thresh": 0.5,
+        "brier": 0.0667,
+        "ece": 0.0667
+      },
+      "lstm": {
+        "model": "lstm",
+        "auc_roc": 0.5,
+        "auc_pr": 0.0667,
+        "f1": 0.0,
+        "f1_thresh": 0.5,
+        "brier": 0.0667,
+        "ece": 0.0667
+      },
+      "ensemble": {
+        "model": "ensemble",
+        "auc_roc": 0.5,
+        "auc_pr": 0.0667,
+        "f1": 0.0,
+        "f1_thresh": 0.5,
+        "brier": 0.0667,
+        "ece": 0.0667
+      }
+    },
+    {
+      "fold": 10,
+      "logreg": {
+        "model": "logreg",
+        "note": "insufficient positives"
+      },
+      "xgboost": {
+        "model": "xgboost",
+        "note": "insufficient positives"
+      },
+      "lstm": {
+        "model": "lstm",
+        "note": "insufficient positives"
+      },
+      "ensemble": {
+        "model": "ensemble",
+        "note": "insufficient positives"
+      }
+    },
+    {
+      "fold": 11,
+      "logreg": {
+        "model": "logreg",
+        "note": "insufficient positives"
+      },
+      "xgboost": {
+        "model": "xgboost",
+        "note": "insufficient positives"
+      },
+      "lstm": {
+        "model": "lstm",
+        "note": "insufficient positives"
+      },
+      "ensemble": {
+        "model": "ensemble",
+        "note": "insufficient positives"
+      }
+    },
+    {
+      "fold": 12,
+      "logreg": {
+        "model": "logreg",
+        "note": "insufficient positives"
+      },
+      "xgboost": {
+        "model": "xgboost",
+        "note": "insufficient positives"
+      },
+      "lstm": {
+        "model": "lstm",
+        "note": "insufficient positives"
+      },
+      "ensemble": {
+        "model": "ensemble",
+        "note": "insufficient positives"
+      }
+    }
+  ],
+  "backtest": {
+    "GFC_2008": {
+      "note": "no data for this country/period"
+    },
+    "EURO_DEBT_2011": {
+      "note": "no data for this country/period"
+    },
+    "RUSSIA_2014": {
+      "note": "no data for this country/period"
+    },
+    "BRAZIL_2015": {
+      "label": "Brazil Recession 2015",
+      "country": "BRA",
+      "crisis_start": "2015-08-01",
+      "lead_months": {
+        "0.5": null,
+        "0.6": null,
+        "0.7": null
+      },
+      "peak_prob": 0.0,
+      "false_alarm_rate": 0.0,
+      "verdict": "MISSED"
+    },
+    "TURKEY_2018": {
+      "label": "Turkey Currency Crisis",
+      "country": "TUR",
+      "crisis_start": "2018-08-01",
+      "lead_months": {
+        "0.5": null,
+        "0.6": null,
+        "0.7": null
+      },
+      "peak_prob": 0.0,
+      "false_alarm_rate": 0.0,
+      "verdict": "MISSED"
+    },
+    "ARGENTINA_2019": {
+      "note": "no data for this country/period"
+    },
+    "COVID_2020": {
+      "note": "no data for this country/period"
+    },
+    "SRI_LANKA_2022": {
+      "note": "no data for this country/period"
+    }
+  }
+}

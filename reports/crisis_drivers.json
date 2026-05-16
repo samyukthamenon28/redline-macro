@@ -1,0 +1,227 @@
+{
+  "Global Financial Crisis": {
+    "onset": "2008-09-01",
+    "label": "GFC",
+    "top_drivers": [
+      "yield_curve_slope",
+      "credit_spread_zscore",
+      "loan_deposit_ratio",
+      "term_premium",
+      "bank_credit_growth"
+    ],
+    "drivers_detail": {
+      "yield_curve_slope": {
+        "mean_shap": -0.644241,
+        "direction": "dampener",
+        "abs_rank": 1
+      },
+      "credit_spread_zscore": {
+        "mean_shap": -0.292363,
+        "direction": "dampener",
+        "abs_rank": 2
+      },
+      "loan_deposit_ratio": {
+        "mean_shap": 0.204962,
+        "direction": "amplifier",
+        "abs_rank": 3
+      },
+      "term_premium": {
+        "mean_shap": 0.188192,
+        "direction": "amplifier",
+        "abs_rank": 4
+      },
+      "bank_credit_growth": {
+        "mean_shap": -0.1195,
+        "direction": "dampener",
+        "abs_rank": 5
+      }
+    },
+    "window": {
+      "start": "2008-03-01",
+      "end": "2008-08-01",
+      "obs": 6
+    },
+    "regime": "risk-OFF amplification",
+    "interpretation": "yield_curve_slope was suppressed (SHAP=-0.6442), dominating the 6-month pre-onset window for GFC. Top 5 drivers carry 28.5% of total model signal in this period. Regime: risk-OFF amplification (10 amplifiers vs 10 dampeners in top 20). Context: Lehman collapse \u2192 systemic credit freeze."
+  },
+  "Eurozone Debt Crisis": {
+    "onset": "2011-08-01",
+    "label": "EZ",
+    "top_drivers": [
+      "credit_spread_zscore",
+      "vix_x_credit",
+      "yield_curve_slope",
+      "loan_deposit_ratio",
+      "pmi_composite"
+    ],
+    "drivers_detail": {
+      "credit_spread_zscore": {
+        "mean_shap": -0.88168,
+        "direction": "dampener",
+        "abs_rank": 1
+      },
+      "vix_x_credit": {
+        "mean_shap": -0.592605,
+        "direction": "dampener",
+        "abs_rank": 2
+      },
+      "yield_curve_slope": {
+        "mean_shap": -0.215045,
+        "direction": "dampener",
+        "abs_rank": 3
+      },
+      "loan_deposit_ratio": {
+        "mean_shap": -0.209935,
+        "direction": "dampener",
+        "abs_rank": 4
+      },
+      "pmi_composite": {
+        "mean_shap": -0.097999,
+        "direction": "dampener",
+        "abs_rank": 5
+      }
+    },
+    "window": {
+      "start": "2011-02-01",
+      "end": "2011-07-01",
+      "obs": 6
+    },
+    "regime": "risk-ON suppression",
+    "interpretation": "credit_spread_zscore was suppressed (SHAP=-0.8817), dominating the 6-month pre-onset window for EZ. Top 5 drivers carry 39.3% of total model signal in this period. Regime: risk-ON suppression (9 amplifiers vs 11 dampeners in top 20). Context: Sovereign spread blowout, ECB backstop."
+  },
+  "China Taper Shock": {
+    "onset": "2015-08-01",
+    "label": "CNY",
+    "top_drivers": [
+      "credit_spread_zscore",
+      "vix_x_credit",
+      "bank_credit_growth",
+      "term_premium",
+      "reserves_months_import"
+    ],
+    "drivers_detail": {
+      "credit_spread_zscore": {
+        "mean_shap": -0.704579,
+        "direction": "dampener",
+        "abs_rank": 1
+      },
+      "vix_x_credit": {
+        "mean_shap": -0.405416,
+        "direction": "dampener",
+        "abs_rank": 2
+      },
+      "bank_credit_growth": {
+        "mean_shap": -0.187475,
+        "direction": "dampener",
+        "abs_rank": 3
+      },
+      "term_premium": {
+        "mean_shap": -0.141719,
+        "direction": "dampener",
+        "abs_rank": 4
+      },
+      "reserves_months_import": {
+        "mean_shap": -0.111789,
+        "direction": "dampener",
+        "abs_rank": 5
+      }
+    },
+    "window": {
+      "start": "2015-02-01",
+      "end": "2015-07-01",
+      "obs": 6
+    },
+    "regime": "risk-ON suppression",
+    "interpretation": "credit_spread_zscore was suppressed (SHAP=-0.7046), dominating the 6-month pre-onset window for CNY. Top 5 drivers carry 30.5% of total model signal in this period. Regime: risk-ON suppression (5 amplifiers vs 15 dampeners in top 20). Context: Renminbi devaluation + EM capital flight."
+  },
+  "COVID Macro Shock": {
+    "onset": "2020-03-01",
+    "label": "COVID",
+    "top_drivers": [
+      "credit_spread_zscore",
+      "vix_x_credit",
+      "yield_curve_slope",
+      "bank_credit_growth",
+      "loan_deposit_ratio"
+    ],
+    "drivers_detail": {
+      "credit_spread_zscore": {
+        "mean_shap": -1.023869,
+        "direction": "dampener",
+        "abs_rank": 1
+      },
+      "vix_x_credit": {
+        "mean_shap": -0.74609,
+        "direction": "dampener",
+        "abs_rank": 2
+      },
+      "yield_curve_slope": {
+        "mean_shap": -0.308491,
+        "direction": "dampener",
+        "abs_rank": 3
+      },
+      "bank_credit_growth": {
+        "mean_shap": -0.13669,
+        "direction": "dampener",
+        "abs_rank": 4
+      },
+      "loan_deposit_ratio": {
+        "mean_shap": -0.109689,
+        "direction": "dampener",
+        "abs_rank": 5
+      }
+    },
+    "window": {
+      "start": "2019-09-01",
+      "end": "2020-02-01",
+      "obs": 6
+    },
+    "regime": "risk-OFF amplification",
+    "interpretation": "credit_spread_zscore was suppressed (SHAP=-1.0239), dominating the 6-month pre-onset window for COVID. Top 5 drivers carry 45.8% of total model signal in this period. Regime: risk-OFF amplification (10 amplifiers vs 10 dampeners in top 20). Context: Pandemic demand collapse + supply freeze."
+  },
+  "Fed Tightening Cycle": {
+    "onset": "2022-03-01",
+    "label": "FEDTIGHT",
+    "top_drivers": [
+      "vix_x_credit",
+      "credit_spread_zscore",
+      "yield_curve_slope",
+      "m2_growth_zscore",
+      "loan_deposit_ratio"
+    ],
+    "drivers_detail": {
+      "vix_x_credit": {
+        "mean_shap": -0.956195,
+        "direction": "dampener",
+        "abs_rank": 1
+      },
+      "credit_spread_zscore": {
+        "mean_shap": -0.706557,
+        "direction": "dampener",
+        "abs_rank": 2
+      },
+      "yield_curve_slope": {
+        "mean_shap": -0.362812,
+        "direction": "dampener",
+        "abs_rank": 3
+      },
+      "m2_growth_zscore": {
+        "mean_shap": 0.07189,
+        "direction": "amplifier",
+        "abs_rank": 4
+      },
+      "loan_deposit_ratio": {
+        "mean_shap": 0.053586,
+        "direction": "amplifier",
+        "abs_rank": 5
+      }
+    },
+    "window": {
+      "start": "2021-09-01",
+      "end": "2022-02-01",
+      "obs": 6
+    },
+    "regime": "risk-ON suppression",
+    "interpretation": "vix_x_credit was suppressed (SHAP=-0.9562), dominating the 6-month pre-onset window for FEDTIGHT. Top 5 drivers carry 42.4% of total model signal in this period. Regime: risk-ON suppression (7 amplifiers vs 13 dampeners in top 20). Context: Fastest hiking cycle in 40 years \u2192 EM stress."
+  }
+}
